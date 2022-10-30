@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 4</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(x){
+            document.getElementById('result').innerHTML = x
+        }
+
+        function evenValue(x){
+            if (x % 2 == 0) return 'even';
+            else return 'not even';
+       }
+        print(evenValue(20))
+    </script>
+</body>
+</html>

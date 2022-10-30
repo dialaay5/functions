@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 7</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(monthNumber){
+            document.getElementById('result').innerHTML += monthNumber
+        }
+
+        function monthDays(monthNumber){
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] 
+            const days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if(monthNumber >= 1 && monthNumber <= 12) return  `${days[monthNumber -1 ] } days there are in ${months[monthNumber - 1]} month` 
+            else return -1
+        }
+        print(monthDays(12))
+    </script>
+</body>
+</html>

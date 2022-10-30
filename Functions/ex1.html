@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 1</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(x, y){
+            document.getElementById('result').innerHTML = x , y
+        }
+
+        function biggerParameter(x, y){
+            if ( x > y) return x;
+            else return y;
+        }
+
+        print(biggerParameter(100, 2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 2</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(x, y){
+            document.getElementById('result').innerHTML = x , y
+        }
+
+        function equalParameter(x, y){
+            if ( x == y) return x + 1;
+            else return 'unknown';
+        }
+
+        print(equalParameter(2, 2))
+    </script>
+</body>
+</html>

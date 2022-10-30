@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 5</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(a, b, c, d){
+            document.getElementById('result').innerHTML = a, b, c, d
+        }
+
+        function equals(a, b, c, d){
+            if (a == b &&  b == c && c == d) return 'all equals';
+            else if (a == b || a == c || a == d || b == c || b == d || c == d ) return '“only 2 numbers are equals';
+            else return 'all numbers not equals'
+       }
+        print(equals(4, 5, 3, 1))
+    </script>
+</body>
+</html>
