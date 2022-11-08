@@ -11,11 +11,22 @@
         }
 
         function equals(a, b, c, d){
+            let arr = []
+            let count = 1
+            for(let n of arguments){
+                if(!arr.includes(n)){
+                    arr.push(n)
+                }
+                else{
+                    count++
+                }
+            }
+
             if (a == b &&  b == c && c == d) return 'all equals';
-            else if (a == b || a == c || a == d || b == c || b == d || c == d ) return '“only 2 numbers are equals';
+            else if (count > 1) return `“only ${count} numbers are equals`;
             else return 'all numbers not equals'
        }
-        print(equals(4, 5, 3, 1))
+        print(equals(1, 1, 4, 1))
     </script>
 </body>
 </html>
